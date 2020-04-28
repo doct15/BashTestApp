@@ -1,0 +1,15 @@
+language: generic
+
+sudo: required
+
+addons:
+  apt:
+    packages:
+      - libcurl4-openssl-dev
+      - libelf-dev
+      - libdw-dev
+
+after_success: |
+  echo "Build Completed" &&
+  kcov coverage simplebash.sh &&
+  bash <(curl -s https://codecov.io/bash)

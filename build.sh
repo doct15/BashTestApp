@@ -8,6 +8,7 @@ echo "Creating directory for codecov"
 mkdir -p coverage
 echo "Running codecov"
 kcov coverage simplebash.sh
+kcov coverage script.sh
 echo "Sending report to codecov.io"
 bash <(curl -s https://codecov.io/bash)
 echo "Removing codecov report"

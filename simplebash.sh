@@ -11,7 +11,7 @@ echo ""
 echo "Your distelli-manifest.yml Environment Variable is:"
 echo "$EXAMPLE"
 echo ""
-for i in {1..10}
+for i in {1..2}
 do
   date=`date`
   echo "The Server Time is:$date"
